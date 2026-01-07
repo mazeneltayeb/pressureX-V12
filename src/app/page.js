@@ -15,7 +15,7 @@ import 'swiper/css/bundle';
 import SwiperCustomers from "@/components/SwiperCustomers";
 import WeOffer from "@/components/WeOffer";
 import Companies from "@/components/Companies";
-
+import ExportBanner from "@/components/ImportBanner";
 export default function Home() {
   return (
    <main>
@@ -33,7 +33,7 @@ export default function Home() {
         showNavigation={true}
         loop={true}
       />
-
+<ExportBanner/>
   <ProductCategories/>
     <SwiperCustomers
       autoPlay={true}
