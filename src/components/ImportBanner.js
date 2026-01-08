@@ -9,7 +9,7 @@ const ExportBanner = () => {
   const [isHoveredSecondary, setIsHoveredSecondary] = useState(false);
   
   // رابط الصورة من Cloudinary - حط الرابط بتاعك هنا
-  const cloudinaryImageUrl = "https://res.cloudinary.com/dybnfsaxq/image/upload/v1767807207/oyfi0v9ekg0dy0lgbxqo.jpg";
+  const cloudinaryImageUrl = "https://res.cloudinary.com/dybnfsaxq/image/upload/v1767913520/beodrctyrysss93nuxas.png";
 
   // تأثيرات hover باستخدام state
   const primaryButtonStyle = {
@@ -76,7 +76,7 @@ const ExportBanner = () => {
             onMouseLeave={() => setIsHoveredPrimary(false)}
             onClick={() => window.location.href = '/export-request'}
           >
-            ابدأ الاستيراد لحسابك الان
+            ابدأ الاستيراد الان
           </button>
           <button 
             style={secondaryButtonStyle}
@@ -107,6 +107,9 @@ const ExportBanner = () => {
           .buttons-container {
             flex-direction: column;
           }
+             button  {
+            padding: 0.5rem 0.5rem !important;
+            }
         }
         
         @media (max-width: 480px) {

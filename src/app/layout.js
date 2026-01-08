@@ -2,6 +2,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./globals.css";
 import NavigationBar from "@/components/Navbar";
+
 import Footer from "@/components/Footer";
 import ClientLayout from "./ClientLayout"; // ده هنضيفه بعد شوية
 
@@ -20,6 +21,9 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+
+    const cloudinaryImageUrl = "https://res.cloudinary.com/demo/image/upload/v1638557898/sample.jpg";
+
   return (
     <html 
           lang="en" 
@@ -34,6 +38,7 @@ export default function RootLayout({ children }) {
 
         <ClientLayout>
           <NavigationBar />
+          
           {/* حسب ارتفاع الناف بار */}
             <div className="nav-bar-paddingTop" style={{ paddingTop: '73px' }}>     
           {children}

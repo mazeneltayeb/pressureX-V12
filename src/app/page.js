@@ -2,7 +2,7 @@
 import React from "react";
 import LatestArticles from "@/components/LatestArticles";
 import PricesSection from "@/components/PricesSection";
-import Banner from "@/components/Banner";
+// import Banner from "@/components/Banner";
 import AdSlot from "@/components/AdSlot";
 // import vedio from "components/vedio/mainVedio.mp4"
 import { Button, Container, Row, Col, Card } from "react-bootstrap";
@@ -16,10 +16,12 @@ import SwiperCustomers from "@/components/SwiperCustomers";
 import WeOffer from "@/components/WeOffer";
 import Companies from "@/components/Companies";
 import ExportBanner from "@/components/ImportBanner";
+import HeroBanner from "@/components/HeroBanner";
 export default function Home() {
   return (
    <main>
-  <Banner />
+    <HeroBanner  />
+  {/* <Banner /> */}
  <AdvancedVideoPlayer 
         videoPath="vedio/mainVedio.mp4"
         aspectRatio="16:9"
